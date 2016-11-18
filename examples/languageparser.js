@@ -14,7 +14,7 @@ tok.registerToken(new RegExp(/^\,/), "COMMA"); // matches a comma ,
 tok.registerToken(new RegExp(/^./)/*, undefined*/); //This token is outputted to tok.on(token) and tok.on(tokenundefined), however is not included in the final arr // catches anything else and doesn't throw an error on an invalid character
 
 tok.on("token", function(token, cont, overrite){
-    console.log("token", token); // logs all tokens
+    console.log("token", token); // logs all tokens that are seen
     /*overrite(newName);*/ // overrites the token's name with this value (has not been tested, unsure if it works)
 });
 
