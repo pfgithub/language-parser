@@ -1,0 +1,22 @@
+TOKENS:
+    UNBREAKTEXT: /^([A-Za-z][A-Za-z0-9]*)/
+    STRING: /^\"([^\"]*)\"/
+    OPENPAREN: /^\(/
+    CLOSEPAREN: /^\)/
+    COMMA: /^[\,\;]/
+    /^./
+GRAMMARS:
+    argument:
+        string
+        STRING
+    function:
+        UNBREAKTEXT OPENPAREN arguments CLOSEPAREN
+    arguments:
+        argument COMMA arguments
+        argument
+        []
+    parenthesis: 
+        OPENPAREN argument CLOSEPAREN
+MAIN:
+    arguments
+# This format is a work in progress
