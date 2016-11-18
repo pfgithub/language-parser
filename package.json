@@ -1,0 +1,25 @@
+{
+  "name": "language-parser",
+  "version": "1.0.0",
+  "description": "A simple node language parser",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pfgithub/language-parser.git"
+  },
+  "keywords": [
+    "parser"
+  ],
+  "author": "pfg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pfgithub/language-parser/issues"
+  },
+  "homepage": "https://github.com/pfgithub/language-parser#readme"
+}
